@@ -4,14 +4,21 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import * as styles from './hero.module.css'
 
 const Hero = ({ image, title, content }) => (
-  <div className={styles.hero}>
+  <div>
+    <div className={styles.hero}>
     {image && (
       <GatsbyImage className={styles.image} alt={title} image={image} />
     )}
-    <div className={styles.details}>
-      <h1 className={styles.title}>{title}</h1>
-      {content && <p className={styles.content}>{content}</p>}
+      <div className={styles.details}>
+        <h1 className={styles.title}>{title}</h1>
+      </div>
     </div>
+    <div
+      className={styles.content}
+      dangerouslySetInnerHTML={{
+        __html: content?.childMarkdownRemark?.html,
+      }}
+    />
   </div>
 )
 
