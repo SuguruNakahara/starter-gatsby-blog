@@ -1,9 +1,6 @@
-.hero, .content {
+.hero {
   margin: 0 auto;
   max-width: var(--size-max-width);
-}
-
-.hero {
   align-items: flex-end;
   display: flex;
   min-height: 200px;
@@ -12,8 +9,7 @@
 }
 
 .content {
-  font-size: var(--text-lead);
-  font-weight: var(--semibold);
+  margin: 0 auto;
   padding: 0 var(--size-gutter);
 }
 
@@ -70,5 +66,9 @@
   .details {
     left: var(--size-gutter);
     padding: var(--space-2xl) var(--size-gutter) 0 0;
+  }
+
+  .content {
+    width: calc(85% - var(--size-gutter));
   }
 }

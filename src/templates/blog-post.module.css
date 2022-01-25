@@ -7,7 +7,7 @@
   padding-bottom: var(--size-gutter);
   padding-left: var(--size-gutter);
   position: relative;
-  /* top: -1em; */
+  top: -1em;
 }
 
 .article {
@@ -16,7 +16,7 @@
   gap: var(--space-xl);
   letter-spacing: var(--text-prose-tracking);
   line-height: var(--loose);
-  padding: var(--size-gutter) var(--size-gutter) calc(var(--size-gutter) * 2);
+  padding: 0 var(--size-gutter) calc(var(--size-gutter) * 2);
 }
 
 .body {
